@@ -107,13 +107,14 @@
   .btn-primary:hover{background:var(--blue-deep)}
   .btn-ghost{border:1px solid var(--line);color:var(--ink)}
   .btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
-  .portrait{width:200px;height:200px;border-radius:50%;object-fit:cover;object-position:center top;border:3px solid #fff;box-shadow:0 4px 24px rgba(0,0,0,0.10)}
+  .portrait{width:270px;height:auto;filter:drop-shadow(0 8px 22px rgba(0,0,0,0.16));align-self:end}
+  .hero .hero-bio p{text-align:justify}
   @media(max-width:720px){
     .hero{grid-template-columns:1fr;text-align:center;padding-top:44px}
     .hero h1{font-size:34px}
     .hero p.blurb{margin-left:auto;margin-right:auto}
     .hero-links{justify-content:center}
-    .portrait{order:-1;margin:0 auto;width:150px;height:150px}
+    .portrait{order:-1;margin:0 auto;width:200px;height:auto}
   }
 
   /* ---------- RESEARCH ---------- */
@@ -198,7 +199,7 @@
       <a class="btn btn-ghost" href="#cv">CV (PDF)</a>
     </div>
   </div>
-  <!-- PHOTO: this shows photo.png as a circle. To change the photo, upload a new file and change the src="..." below. -->
+  <!-- PHOTO: shows profile_photo.png as a free cutout. To change it, upload a new file and update src="..." below. -->
   <img class="portrait" src="profile_photo.png" alt="Luciana Manuali">
 </div>
 
