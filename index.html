@@ -92,9 +92,14 @@
 
   /* ---------- HERO ---------- */
   .hero{padding-top:64px;padding-bottom:64px;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center;border-bottom:1px solid var(--line)}
-  .hero h1{font-size:38px;margin-bottom:18px;color:var(--ink)}
+  .hero h1{font-size:46px;margin-bottom:18px;color:var(--ink)}
   .hero h1 .acc{color:var(--blue)}
   .hero p.role{font-size:19px;color:var(--blue);font-weight:600;margin-bottom:18px;font-family:'Inter',sans-serif}
+  .hero .hero-welcome{font-size:26px;color:var(--blue);margin-bottom:20px;font-weight:600}
+  .hero .hero-bio p{margin-bottom:14px;font-size:16px;color:#333}
+  .hero .hero-bio a{color:var(--blue);text-decoration:none;font-weight:500}
+  .hero .hero-bio a:hover{text-decoration:underline}
+  .hero .hero-bio .contact{margin-top:18px}
   .hero p.blurb{color:#333;max-width:560px;margin-bottom:26px}
   .hero-links{display:flex;flex-wrap:wrap;gap:12px}
   .btn{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-size:14.5px;font-weight:600;padding:9px 18px;border-radius:8px;transition:all .15s}
@@ -102,7 +107,7 @@
   .btn-primary:hover{background:var(--blue-deep)}
   .btn-ghost{border:1px solid var(--line);color:var(--ink)}
   .btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
-  .portrait{width:190px;height:190px;border-radius:50%;object-fit:cover;background:var(--wash);border:3px solid #fff;box-shadow:0 4px 24px rgba(0,0,0,0.08);display:flex;align-items:center;justify-content:center;color:var(--gray);font-size:13px;text-align:center;padding:16px}
+  .portrait{width:200px;height:200px;border-radius:50%;object-fit:cover;object-position:center top;border:3px solid #fff;box-shadow:0 4px 24px rgba(0,0,0,0.10)}
   @media(max-width:720px){
     .hero{grid-template-columns:1fr;text-align:center;padding-top:44px}
     .hero h1{font-size:34px}
@@ -181,17 +186,20 @@
 <!-- HERO -->
 <div id="top" class="hero" style="max-width:var(--maxw);margin:0 auto">
   <div>
-    <h1><span lang-en>Welcome!</span><span lang-es>¡Bienvenidos/as!</span></h1>
-    <p class="role"><span lang-en>PhD Candidate in Economics · IAE-CSIC &amp; Universitat Autònoma de Barcelona</span><span lang-es>Doctoranda en Economía · IAE-CSIC y Universitat Autònoma de Barcelona</span></p>
-    <p class="blurb"><span lang-en>I work in applied microeconomics with a focus on policy evaluation — labor, gender, and development. I'm especially drawn to questions affecting people whose rights are most vulnerable, and to the role research can play in designing public policy that reaches those who need it most.</span><span lang-es>Trabajo en microeconomía aplicada con foco en la evaluación de políticas — laboral, género y desarrollo. Me mueven particularmente las problemáticas que afectan a poblaciones cuyos derechos son vulnerados, y el rol que la investigación puede tener en diseñar políticas públicas que lleguen a quienes más lo necesitan.</span></p>
+    <h2 class="hero-welcome"><span lang-en>Welcome to my website!</span><span lang-es>¡Bienvenidos/as a mi sitio!</span></h2>
+    <div class="hero-bio">
+      <p><span lang-en>I'm a PhD Candidate in Economics at the <a href="https://www.uabidea.eu/" target="_blank" rel="noopener">IDEA Graduate Program</a>, jointly run by the <a href="https://www.iae.csic.es/" target="_blank" rel="noopener">Institut d'Anàlisi Econòmica (IAE-CSIC)</a>, the <a href="https://www.uab.cat/web/universitat-autonoma-de-barcelona-1345467954409.html" target="_blank" rel="noopener">Universitat Autònoma de Barcelona</a>, and the <a href="https://bse.eu/" target="_blank" rel="noopener">Barcelona School of Economics</a>. My supervisors are <a href="https://sites.google.com/site/cristinabellesobrero/" target="_blank" rel="noopener">Cristina Bellés-Obrero</a> and <a href="https://sites.google.com/site/lidiafarre78/home" target="_blank" rel="noopener">Lídia Farré</a>.</span><span lang-es>Soy doctoranda en Economía en el <a href="https://www.uabidea.eu/" target="_blank" rel="noopener">IDEA Graduate Program</a>, organizado conjuntamente por el <a href="https://www.iae.csic.es/" target="_blank" rel="noopener">Institut d'Anàlisi Econòmica (IAE-CSIC)</a>, la <a href="https://www.uab.cat/web/universitat-autonoma-de-barcelona-1345467954409.html" target="_blank" rel="noopener">Universitat Autònoma de Barcelona</a> y la <a href="https://bse.eu/" target="_blank" rel="noopener">Barcelona School of Economics</a>. Mis directoras son <a href="https://sites.google.com/site/cristinabellesobrero/" target="_blank" rel="noopener">Cristina Bellés-Obrero</a> y <a href="https://sites.google.com/site/lidiafarre78/home" target="_blank" rel="noopener">Lídia Farré</a>.</span></p>
+      <p><span lang-en>I'm an applied microeconomist with a special interest in labor economics, gender economics, and development economics. I believe research has an important role to play in understanding the social and economic challenges we face, and in informing the design of public policy so that it can better contribute to development and social wellbeing.</span><span lang-es>Soy microeconomista aplicada con especial interés en economía laboral, economía de género y economía del desarrollo. Creo que la investigación tiene un rol importante en comprender los desafíos sociales y económicos que enfrentamos, y en informar el diseño de políticas públicas para que contribuyan mejor al desarrollo y al bienestar social.</span></p>
+      <p><span lang-en>Before my PhD, I completed a Master in Economics and Finance at <a href="https://cemfi.es/" target="_blank" rel="noopener">CEMFI</a> and my undergraduate degree at the <a href="https://www.eco.unc.edu.ar/" target="_blank" rel="noopener">Universidad Nacional de Córdoba</a>, Argentina.</span><span lang-es>Antes del doctorado, cursé el Máster en Economía y Finanzas en <a href="https://cemfi.es/" target="_blank" rel="noopener">CEMFI</a> y mi grado en la <a href="https://www.eco.unc.edu.ar/" target="_blank" rel="noopener">Universidad Nacional de Córdoba</a>, Argentina.</span></p>
+      <p class="contact"><span lang-en>You can reach me at</span><span lang-es>Puedes escribirme a</span> <a href="mailto:manuali.luciana@gmail.com">manuali.luciana@gmail.com</a> <span lang-en>or</span><span lang-es>o</span> <a href="mailto:luciana.manuali@iae.csic.es">luciana.manuali@iae.csic.es</a>.</p>
+    </div>
     <div class="hero-links">
-      <a class="btn btn-primary" href="mailto:luciana.manuali@iae.csic.es">✉ <span lang-en>Email</span><span lang-es>Correo</span></a>
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/luciana-manuali/" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn btn-ghost" href="#cv">CV (PDF)</a>
-      <a class="btn btn-ghost" href="https://www.linkedin.com/in/luciana-manuali/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
-  <!-- PHOTO: replace the line below with:  <img class="portrait" src="my-photo.jpg" alt="Luciana Manuali"> -->
-  <div class="portrait">[ your photo here — a warm, clear headshot ]</div>
+  <!-- PHOTO: this shows photo.png as a circle. To change the photo, upload a new file and change the src="..." below. -->
+  <img class="portrait" src="photo.png" alt="Luciana Manuali">
 </div>
 
 <!-- RESEARCH -->
@@ -205,7 +213,7 @@
       <h3>Criminalizing Digital Sexual Violence: Evidence from Mexico's <em>Ley Olimpia</em></h3>
       <p class="plain"><span lang-en>The first causal evidence that criminalizing digital sexual violence reduces it.</span><span lang-es>La primera evidencia causal de que criminalizar la violencia sexual digital la reduce.</span></p>
       <p class="abstract"><span lang-en>Exploiting the staggered adoption of Mexico's Ley Olimpia across 32 states, I find the law reduced non-consensual sharing of intimate content among women aged 18–24 by 3.8 percentage points — roughly a 60% reduction. Event-study estimates show no pre-trends and an immediate effect. I interpret the results through a two-stage framework of awareness and behavioral response.</span><span lang-es>Aprovechando la adopción escalonada de la Ley Olimpia en los 32 estados de México, encuentro que la ley redujo la difusión no consentida de contenido íntimo entre mujeres de 18 a 24 años en 3.8 puntos porcentuales — cerca de un 60% de reducción. Los estudios de evento no muestran tendencias previas y sí un efecto inmediato. Interpreto los resultados mediante un marco de dos etapas: concientización y respuesta conductual.</span></p>
-      <div class="meta"><span class="tag">Gender · Crime · Law</span></div>
+      <div class="meta"><span class="tag">Job Market Paper</span><span class="tag">June 2026</span><span class="tag">Gender · Crime · Law</span></div>
       <p class="req"><span lang-en>Draft available upon request.</span><span lang-es>Borrador disponible a pedido.</span></p>
     </div>
     <div class="figwrap">
@@ -232,13 +240,15 @@
 <!-- TEACHING -->
 <section id="teaching">
   <div class="eyebrow"><span lang-en>Teaching</span><span lang-es>Docencia</span></div>
-  <h2 class="section-title"><span lang-en>Teaching</span><span lang-es></span></h2>
+  <h2 class="section-title"><span lang-en>Teaching is where I do my best work</span><span lang-es>La docencia es donde doy lo mejor de mí</span></h2>
 
-  <div class="throughline"><span lang-en>.</span><span lang-es>T.</span></div>
+  <div class="throughline"><span lang-en>Every class I teach closes the same way: a round where I remind each student they have a superpower — and that they can change the world for the better.</span><span lang-es>Toda clase que doy cierra igual: una ronda donde les recuerdo a cada estudiante que tienen un superpoder — y que pueden cambiar el mundo para mejor.</span></div>
 
   <div class="prose">
     <p><span lang-en>I teach econometrics and economics on the belief that people learn what they <em>do</em>, not what they're told. So my classroom is a participatory one. Students don't watch me derive a concept — they become it. To teach production functions in intro economics, I stage a live orange-juice production line. To teach splines, we build a human spline, students joining hands to trace the curve. To teach cross-validation, the whole room <em>becomes</em> the algorithm. We run mock news broadcasts, turn papers into short plays, hold debates on competing research designs, and settle questions with rapid-fire ping-pong rounds.</span><span lang-es>Enseño econometría y economía convencida de que la gente aprende lo que <em>hace</em>, no lo que le dicen. Por eso mi aula es participativa. Los estudiantes no me miran derivar un concepto — se convierten en él. Para enseñar funciones de producción en introducción, montamos una línea de producción de jugo de naranja en vivo. Para enseñar splines, armamos una spline humana, agarrándonos de las manos para trazar la curva. Para enseñar validación cruzada, toda la clase <em>es</em> el algoritmo. Hacemos noticieros simulados, convertimos papers en pequeñas obras de teatro, debatimos diseños de investigación y resolvemos preguntas con rondas de ping-pong.</span></p>
-      </div>
+    <p><span lang-en>The play is not decoration — it's the method. When students dance, compete, act out a paper, or write a song to explain a topic, they stop being spectators and start owning the material. And because learning is also emotional, we make room for that too: a few minutes of breathing or yoga to reset before a hard proof, and a closing ritual that sends everyone out feeling capable.</span><span lang-es>El juego no es decoración — es el método. Cuando bailan, compiten, teatralizan un paper o escriben una canción para explicar un tema, dejan de ser espectadores y se apropian del contenido. Y como aprender también es emocional, le hacemos lugar a eso: unos minutos de respiración o yoga para resetear antes de una demostración difícil, y un cierre que manda a cada persona a la salida sintiéndose capaz.</span></p>
+    <p><span lang-en>My next challenge is teaching this way in the era of AI — keeping students fully inside the process of thinking, not outside it.</span><span lang-es>Mi próximo desafío es enseñar así en la era de la IA — manteniendo a los estudiantes plenamente dentro del proceso de pensar, no fuera de él.</span></p>
+  </div>
 
   <h3 class="sub"><span lang-en>In practice</span><span lang-es>En la práctica</span></h3>
   <div class="chips">
